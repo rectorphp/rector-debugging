@@ -1,0 +1,27 @@
+{
+    "name": "rector/rector-debugging",
+    "type": "rector-extension",
+    "license": "MIT",
+    "description": "Rector debugging functions for dump and printing nodes",
+    "require": {
+        "php": ">=8.1",
+        "tracy/tracy": "^2.9.4"
+    },
+    "require-dev": {
+        "nikic/php-parser": "^4.14.0"
+    },
+    "autoload": {
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "cweagans/composer-patches": true,
+            "rector/extension-installer": true,
+            "phpstan/extension-installer": true
+        }
+    }
+}
